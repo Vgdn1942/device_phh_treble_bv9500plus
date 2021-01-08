@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string-array translatable="false" name="config_tether_usb_regexs">
+		<item>"usb\\d"</item>
+		<item>"rndis\\d"</item>
+	</string-array>
+
+	<string-array translatable="false" name="config_tether_wifi_regexs">
+		<item>"wlan0"</item>
+		<item>"softap.*"</item>
+		<item>"wifi_br0"</item>
+		<item>"wigig0"</item>
+	</string-array>
+
+	<string-array translatable="false" name="config_tether_bluetooth_regexs">
+        <item>bnep\\d</item>
+		<item>"bt-pan"</item>
+	</string-array>
+
+	<bool name="config_enableAutoPowerModes">true</bool>
+	<bool name="config_intrusiveNotificationLed">true</bool>
+	<string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
+	<bool name="config_useRoundIcon">true</bool>
+
+	<bool name="config_unplugTurnsOnScreen">true</bool>
+	<integer name="config_multiuserMaximumUsers">5</integer>
+	<bool name="config_enableMultiUserUI">true</bool>
+
+	<string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+	<bool name="config_swipe_up_gesture_setting_available">true</bool>
+	<bool name="config_smart_battery_available">true</bool>
+	<dimen name="config_dialogCornerRadius">8.0dip</dimen>
+	<dimen name="config_buttonCornerRadius">4.0dip</dimen>
+
+	<bool name="config_cellBroadcastAppLinks">true</bool>
+
+    <!-- True if the firmware supports connected MAC randomization -->
+    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+
+    <!-- True if the firmware supports p2p MAC randomization -->
+    <bool name="config_wifi_p2p_mac_randomization_supported">true</bool>
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
+
+    <string-array name="config_biometric_sensors" translatable="false" >
+        <!-- ID0:Fingerprint:Strong -->
+        <item>0:2:15</item>
+    </string-array>
+</resources>
